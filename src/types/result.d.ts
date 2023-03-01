@@ -125,3 +125,38 @@ interface Child {
   children?: Child[];
   fold: boolean;
 }
+
+interface VideoData {
+  videoList: VideoList[];
+}
+
+interface VideoList {
+  id: number;
+  cover: string;
+  url: string;
+  name: string;
+  createTime: number;
+  updateTime?: any;
+  author: Author;
+  weight: number;
+  selfIntroduction: string;
+  isTop: boolean;
+  tags: Tag[];
+}
+
+interface Tag {
+  id: number;
+  tagName: string;
+  icon: string;
+}
+
+interface UserIres {
+  id: number;
+  userName: string;
+  nickName: string;
+  email: string;
+  createTime: number;
+  avatar: string;
+  status: boolean;
+  selfIntroduction: string;
+}
